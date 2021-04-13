@@ -15,21 +15,16 @@ header {
     background-image: url("https://cdn.myanimelist.net/images/userimages/4638690.jpg?t=1618282200");
   
     /* Set a specific height */
-    min-height: 70vh;
+    min-height: 100vh;
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation-name: logoAnimation;
+    animation-duration: 5s;
   }
-
-nav {
-    display:flex;
-    background-color:aqua;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
 
 main {
     display:flex;
@@ -65,4 +60,18 @@ h1 {
 
 p {
     text-align: center;
+}
+
+@keyframes logoAnimation {
+    0%{
+        opacity:0;
+        Blur:30px
+    }
+    35%{
+        opacity:0.1;
+    }
+    100%{
+        opacity:1;
+        Blur:0px
+}
 }
