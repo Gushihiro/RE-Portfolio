@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+header {
+    display:flex;
+    flex-direction: column;
+    height: 30vh;
+    background-color: gray;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("https://cdn.myanimelist.net/images/userimages/4638690.jpg?t=1618282200");
+  
+    /* Set a specific height */
+    min-height: 70vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+nav {
+    display:flex;
+    background-color:aqua;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+main {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:10px 20px;
+}
+
+.container {
+    display:flex;
+    background-color: aquamarine;
+    width: 50%;
+    margin: 10px;
+    justify-content: center;
+    padding: 5px;
+    min-height: 40vh;
+}
+
+.aside {
+    display:flex;
+    width: 20%;
+    margin: 10px;
+    padding: 5px;
+    background-color: rgb(225, 200, 248);
+    justify-content: center;
+    min-height: 40vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
