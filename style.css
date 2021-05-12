@@ -1,37 +1,108 @@
+:root {
+    --clr-neonblue: hsl(205, 100%, 50%);
+    --clr-neonwhite: hsl(0, 0%, 100%);
+}
+
 * {
     box-sizing: border-box;
     margin:0;
+}
+body {
+
+    background-color:black;
+    background-image: url("./images/MainLogoDim");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 header {
     display:flex;
     flex-direction: column;
-    height: 30vh;
-    background-color: gray;
+    min-height: 150vh;
+    justify-content: center;
+    background-color:hsl(0, 0%, 0%)
+}
+
+.h1div {
+    opacity: 0;
 }
 
 .parallax {
     /* The image used */
-    background-image: url("https://cdn.myanimelist.net/images/userimages/4638690.jpg?t=1618282200");
-  
+    background-image: url("./images/MainLogo");
+    background-color:black;
     /* Set a specific height */
-    min-height: 100vh;
-  
+    min-height: 150vh;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     animation-name: logoAnimation;
-    animation-duration: 5s;
-  }
+    animation-duration: 2s;
+}
 
-main {
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    min-height: 100vh;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom: .1em solid var(--clr-neonblue);
+    border-bottom-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,1));
+}
+
+/* .hero-container {
+    width: 0;
+    height:0;
+    
+    background-size:cover;
+    position: absolute;
+    
+} */
+
+.hero h1 {
+    color: transparent;
+    font-size: 10rem;
+    -webkit-text-stroke: 2px var(--clr-neonwhite);
+}
+
+/* .hero h1:hover {
+    text-shadow:0px 3rem 4rem var(--clr-neonwhite);
+} */
+
+.hero h3 {
+    /* color: var(--clr-neonwhite); */
+    -webkit-text-stroke: .5px var(--clr-neonwhite);
+    font-size: 3rem;
+}
+
+.hero h3:hover {
+    text-shadow:0px 1rem 1rem var(--clr-neonwhite);
+}
+
+card {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    margin:10px 20px;
+    margin: 0 auto;
+    margin-top:800px;
+}
+
+.main-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0 auto;
 }
 
 .container {
@@ -56,6 +127,7 @@ main {
 
 h1 {
     text-align: center;
+    font-size: 500%;
 }
 
 p {
