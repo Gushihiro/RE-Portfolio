@@ -107,7 +107,15 @@ footer {
 .container-main {
     padding-top: 20vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,1));
+}
+
+.container-main2 {
+    padding-top: 20vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0,0,0,1));
 }
 
@@ -161,20 +169,162 @@ footer {
 }
 
 .aside-projV {
-    display:flex;
-    justify-content: center;
-    /* border: 1px solid var(--clr-neonwhite); */
-    border-radius: 10%;
+    margin: 0 auto;
+    background-color: transparent;
     min-height:70vh;
     width: 40vw;
-    margin: 0 auto;
-    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
+    border-radius: 10%;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
     -webkit-transition: all 1s ease-out;
-   -moz-transition: all 1s ease-out;
-   -o-transition: all 1s ease-out;
-   -ms-transition: all 1s ease-out;
-   transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+.aside-projV-inner {
+    /* border: 1px solid var(--clr-neonwhite); */
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
 }
+
+#vedomyss:hover ~ .aside-projV > .aside-projV-inner {
+    transform: rotateY(180deg);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.aside-projV-front, #vedomy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  .aside-projV-front {
+    background-color: black;
+    color: black;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    border-radius:10px;
+  }
+
+  #vedomy {
+    /* border: 1px solid var(--clr-neonwhite); */
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
+    transform: rotateY(180deg);
+    box-shadow: 10px 10px 30px hsla(261, 64%, 68%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    transition: 1s;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+
+
+
+
+
+.aside-proj {
+    margin: 0 auto;
+    background-color: transparent;
+    min-height:70vh;
+    width: 40vw;
+    border-radius: 10px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+.aside-proj-inner {
+    /* border: 1px solid var(--clr-neonwhite); */
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+#ouicirclesss:hover ~ .aside-proj > .aside-proj-inner {
+    transform: rotateY(180deg);
+}
+
+.aside-proj-front, #ouicircle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+  }
+
+  .aside-projV-front {
+    background-color: black;
+    color: black;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    border-radius:10px;
+  }
+
+  #ouicircle {
+    /* border: 1px solid var(--clr-neonwhite); */
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
+    transform: rotateY(180deg);
+    box-shadow: -10px 10px 30px rgba(255, 148, 148, 0.411), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #vedomyss {
     display:flex;
@@ -217,22 +367,6 @@ footer {
     opacity: 1;
     box-shadow: -10px 10px 30px hsla(261, 64%, 68%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
 } */
-
-.aside-proj {
-    display:flex;
-    justify-content: center;
-    /* border: 1px solid var(--clr-neonwhite); */
-    border-radius: 10%;
-    min-height:70vh;
-    width: 40vw;
-    margin: 0 auto;
-    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
-    -webkit-transition: all 1s ease-out;
-   -moz-transition: all 1s ease-out;
-   -o-transition: all 1s ease-out;
-   -ms-transition: all 1s ease-out;
-   transition: all 1s ease-out;
-}
 
 #ouicirclesss {
     display:flex;
@@ -518,3 +652,5 @@ select:-webkit-autofill:focus {
 		transform: scale(1, .025);
 	}
 }
+
+
