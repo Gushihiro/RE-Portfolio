@@ -1,0 +1,22 @@
+{
+  "name": "re-portfolio",
+  "version": "1.0.0",
+  "description": "Updated",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gushihiro/RE-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gushihiro/RE-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Gushihiro/RE-Portfolio#readme",
+  "dependencies": {
+    "emailjs-com": "^2.6.4"
+  }
+}

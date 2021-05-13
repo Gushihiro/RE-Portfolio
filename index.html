@@ -7,7 +7,7 @@
     <title>Gushihiro Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -19,8 +19,6 @@
         <h1>G u s h i h i r o</h1>
         <h2>Nonchalant</h2>
         <h3>Creative Code | Design</h3>
-        <!-- <section class="hero-container"> 
-        </section> -->
     </section>
     <section class="container">
         <section class ="aside-about">
@@ -48,7 +46,7 @@
     <section class="container-main">
         <section class ="aside-proj">
             <card id="about">
-                <h2 id="ouicircles-title">ouiCircles</h2>
+                <h2 id="ouicirclestitle">ouiCircles</h2>
                 <br>
                 <p>
                     Community Bulletin
@@ -57,7 +55,31 @@
         </section>
         <card id="filler"></card>
     </section>
-    
+    <section class="spacer"></section>
+    <section class="wrapper">
+        <form id = "contact-form">
+            <section class="input-fields">
+                <input type="text" class="input" name = "user_name" placeholder="Name">
+                <input type="text" class="input" name = "user_email" placeholder="Email">
+                <input type="text" class="input" name = "user_phone" placeholder="Phone">
+                <input type="hidden" name="contact_number">
+                <input type="text" class="input" placeholder="Subject">
+            </section>
+            <section class="msg">
+                <textarea name = "message" placeholder="Message"></textarea>
+                <button class="btn" type = "submit" >Send</button>
+            </section>
+        </form>
+    </section>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_IRvU5g2r5gAK94Zdm0LMm");
+   })();
+</script>
     <script src="script.js"></script>
 </body>
 
