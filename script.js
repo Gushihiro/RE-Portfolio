@@ -60,18 +60,31 @@ const observer = new IntersectionObserver(entries => {
   
   observer.observe(document.querySelector('h3'));
 
-  // const observer2 = new IntersectionObserver(entries => {
-  //   // Loop over the entries
-  //   entries.forEach(entry => {
-  //     // If the element is visible
-  //     if (entry.isIntersecting) {
-  //       // Add the animation class
-  //       const bgImage = document.body.style.backgroundImage = "none";
-  //     }
-  //   });
-  // });
+  const observer2 = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add('vedomy-animate');
+      }
+    });
+  });
   
-  // observer2.observe(document.querySelector('#vedomytitle'));
+  observer2.observe(document.querySelector('#vedomyss'));
+
+  const observer3 = new IntersectionObserver(entries => {
+    // Loop over the entries
+    entries.forEach(entry => {
+      // If the element is visible
+      if (entry.isIntersecting) {
+        // Add the animation class
+        entry.target.classList.add('vedomy-animate');
+      }
+    });
+  });
+  observer2.observe(document.querySelector('#ouicirclesss'));
+
 
   window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
