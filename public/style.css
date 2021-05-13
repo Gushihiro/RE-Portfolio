@@ -9,10 +9,19 @@
     margin:0;
     outline: none;
 }
+
+a {
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 200%;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-neonwhite);
+}
+
 body {
 
     background-color:black;
-    background-image: url("./images/MainLogo");
+    background-image: url("../images/MainLogo");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -33,7 +42,7 @@ header {
 
 .parallax {
     /* The image used */
-    background-image: url("./images/MainLogo");
+    background-image: url("../images/MainLogo");
     background-color:black;
     /* Set a specific height */
     min-height: 100vh;
@@ -168,6 +177,18 @@ footer {
 
 }
 
+.social {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20vh;
+}
+
+.social img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
 .aside-projV {
     margin: 0 auto;
     background-color: transparent;
@@ -246,11 +267,6 @@ footer {
     transition: all 1s ease-out;
 }
 
-
-
-
-
-
 .aside-proj {
     margin: 0 auto;
     background-color: transparent;
@@ -314,18 +330,6 @@ footer {
     transition: 1s;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 #vedomyss {
     display:flex;
     flex-direction: column;
@@ -362,11 +366,6 @@ footer {
     transition: 1s;
     /* transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1) */
 }
-
-/* #vedomyss img:hover {
-    opacity: 1;
-    box-shadow: -10px 10px 30px hsla(261, 64%, 68%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
-} */
 
 #ouicirclesss {
     display:flex;
@@ -463,6 +462,13 @@ footer {
 }
 
 #about p {
+    color: var(--clr-neonwhite);
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#ouicircle p {
+    padding: 10px;
     color: var(--clr-neonwhite);
     font-size: 1.3rem;
     font-family: 'Roboto', sans-serif;

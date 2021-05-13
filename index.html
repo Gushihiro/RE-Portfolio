@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gushihiro Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./public/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@100&display=swap" rel="stylesheet">
 </head>
@@ -34,13 +34,19 @@
                 <h3>GitHub | git | mySQL | Sequelize | Express | MondoDb</h3>
                 <h3>Bootstrap | Handlebars | Materialize</h3>
             </card>
+            <card class = "social">
+                <a href="https://github.com/Gushihiro"><img src="images/githubicon" alt="github"></a>
+                <a href="https://www.linkedin.com/in/robinsonhiroto/"><img src="images/linkedinlogoglowy" alt="linkedin"></a>
+                <a href="https://twitter.com/gushihiro"><img src="images/Twitterlogoglowy" alt="twitter"></a>
+            </card>
         </section>
     </section>
     <section class="container-main">
         <card id="vedomyss">
             <img src="images/projects/vedomyscreenshot.png">
+            <a href="./vedomy.html"><h1>vedomý</h1></a>
         </card>
-
+        </a>
 <!-- --------------------------------------------- -->
 
 
@@ -51,7 +57,9 @@
                     <h2 id="vedomytitle">vedomý</h2>
                     <br>
                     <p>
-                        Meditation App 
+                        Vedomý is an ambitious mood tracking application that provides local storage tracking of daily mood logs while providing random inspirational quotes and an
+                        animated box to assist with sequential breathing. Along with daily quotes, Vedomý also provides a healthy recipe of the day, a spotify widget for calming music, 
+                        sleep tips based on user input, and daily yoga poses.
                     </p>
                 </card>
             </section>
@@ -65,15 +73,18 @@
         <card id="ouicirclesss">
             <img src="images/projects/ouicirclesscreenshot.png">
         </card>
-        
+
         <section class ="aside-proj">
             <section class ="aside-proj-inner">
                 <card class = "aside-proj-front"></card>
                 <card id="ouicircle">
-                    <h2 id="ouicirclestitle">ouiCircles</h2>
+                    <h2 id="ouicirclestitle">ouiCircle</h2>
                     <br>
                     <p>
-                        Community Bulletin
+                        A community bulletin application with geospatial ip tracking to render nearby event cards to the user. 
+                        The goal of the project was to offer users an opportunity to engage with their community without having to search extensively.
+                        From volunteer service to pick up basketball games, ouiCircle provides listings of events within a 30 mile radius and user authentication on it's community 
+                        board.
                     </p>
                 </card>
             </section>
@@ -104,7 +115,7 @@
       emailjs.init("user_IRvU5g2r5gAK94Zdm0LMm");
    })();
 </script>
-    <script src="script.js"></script>
+    <script src="./public/script.js"></script>
 </body>
 
 <footer>
