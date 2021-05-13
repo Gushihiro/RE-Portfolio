@@ -177,6 +177,17 @@ footer {
 
 }
 
+.social img:hover {
+    box-shadow: 0 5px 10px hsl(0, 0%, 100%), inset 0 0 10px hsl(0, 0%, 100%);
+    transition: .3s;
+}
+
+.social img:active {
+    box-shadow: 0 0px 15px hsl(0, 0%, 100%), inset 0 0px 14px hsl(0, 0%, 100%);
+    border-radius: 25%;
+    transition: .5s;
+}
+
 .social {
     display: flex;
     justify-content:space-evenly;
@@ -187,6 +198,8 @@ footer {
     width: 100px;
     height: 100px;
     padding: 20px;
+    border-radius: 10%;
+    transition: .3s ease-out;
 }
 
 .aside-projV {
@@ -310,7 +323,7 @@ footer {
     transition: all 1s ease-out;
   }
 
-  .aside-projV-front {
+  .aside-proj-front {
     background-color: black;
     color: black;
     -webkit-transition: all 1s ease-out;
@@ -326,7 +339,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
     transform: rotateY(180deg);
-    box-shadow: -10px 10px 30px rgba(255, 148, 148, 0.411), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    box-shadow: -10px 10px 30px hsla(0, 100%, 72%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
     transition: 1s;
 }
 
@@ -399,7 +412,7 @@ footer {
 
 #ouicirclesss:hover, #ouicirclesss:hover > img {
     opacity: 1;
-    box-shadow: 10px 10px 30px rgba(255, 148, 148, 0.411), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    box-shadow: 10px 10px 30px hsla(0, 100%, 72%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
     transition: 1s;
 }
 
@@ -409,7 +422,7 @@ footer {
 }
 
 .aside-proj:hover {
-    box-shadow: -10px 10px 30px rgba(255, 148, 148, 0.411), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    box-shadow: -10px 10px 30px hsla(0, 100%, 72%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
     transition: 1s;
 }
 
@@ -438,7 +451,7 @@ footer {
 }
 
 #ouicircle h2 {
-    -webkit-text-stroke: .1px rgba(255, 124, 124, 0.411);
+    -webkit-text-stroke: .1px hsla(0, 100%, 72%, 0.795);
     font-size: 4rem;
     font-family: 'Orbitron', sans-serif;
 }
