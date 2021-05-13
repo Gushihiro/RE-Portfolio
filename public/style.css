@@ -180,11 +180,13 @@ footer {
 .social img:hover {
     box-shadow: 0 5px 10px hsl(0, 0%, 100%), inset 0 0 10px hsl(0, 0%, 100%);
     transition: .3s;
+    transform: scale(1.1);
 }
 
 .social img:active {
     box-shadow: 0 0px 15px hsl(0, 0%, 100%), inset 0 0px 14px hsl(0, 0%, 100%);
-    border-radius: 25%;
+    border-radius: 20%;
+    transform: scale(1);
     transition: .5s;
 }
 
@@ -200,6 +202,7 @@ footer {
     padding: 20px;
     border-radius: 10%;
     transition: .3s ease-out;
+    margin: 10px;
 }
 
 .aside-projV {
