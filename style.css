@@ -10,7 +10,7 @@
 body {
 
     background-color:black;
-    background-image: url("./images/MainLogoDim");
+    background-image: url("./images/MainLogo");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ header {
 
 .parallax {
     /* The image used */
-    background-image: url("./images/MainLogoDim");
+    background-image: url("./images/MainLogo");
     background-color:black;
     /* Set a specific height */
     min-height: 100vh;
@@ -52,8 +52,8 @@ header {
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0,1)), radial-gradient(circle at top left,rgba(0, 0, 0, 0), rgba(0,0,0,1));
     background-clip: padding-box;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
     border-bottom: .1em solid var(--clr-neonwhite);
@@ -128,7 +128,10 @@ footer {
     display: flex;
     justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0,0,0,1));
-    border-radius: 20%;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
     
 }
 
