@@ -20,7 +20,7 @@ a {
 .projectlink {
     padding-top: 20px;
     text-decoration: none;
-    font-size: clamp(1rem, 5vw, 4rem);
+    font-size: clamp(1rem, 3vw, 2.5rem);
     font-family: 'Roboto', sans-serif;
     color: var(--clr-neonwhite);
 }
@@ -237,7 +237,7 @@ footer {
 .aside-projV {
     margin: 0 auto;
     background-color: transparent;
-    min-height:70vh;
+    min-height:60vh;
     width: 40vw;
     border-radius: 10px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -324,7 +324,7 @@ footer {
 .aside-proj {
     margin: 0 auto;
     background-color: transparent;
-    min-height:70vh;
+    min-height:60vh;
     width: 40vw;
     border-radius: 10px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -400,7 +400,7 @@ footer {
     align-items: center;
     /* border: 1px solid var(--clr-neonwhite); */
     border-radius: 10%;
-    min-height:70vh;
+    min-height:60vh;
     width: 40vw;
     margin: 0 auto;
     box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
@@ -437,7 +437,7 @@ footer {
     align-items: center;
     /* border: 1px solid var(--clr-neonwhite); */
     border-radius: 10%;
-    min-height:70vh;
+    min-height:60vh;
     width: 40vw;
     margin: 0 auto;
     box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
