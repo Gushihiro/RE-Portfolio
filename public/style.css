@@ -520,20 +520,20 @@ footer {
 
 #vedomy p {
     color: var(--clr-neonwhite);
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     font-family: 'Roboto', sans-serif;
 }
 
 #about p {
     color: var(--clr-neonwhite);
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);;
     font-family: 'Roboto', sans-serif;
 }
 
 #ouicircle p {
     padding: 10px;
     color: var(--clr-neonwhite);
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -687,6 +687,24 @@ select:-webkit-autofill:focus {
         border-radius: 10%;
         transition: .3s ease-out;
         margin: .5vw;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0,0,0,1)), radial-gradient(circle at top left,rgba(0, 0, 0, 0), rgba(0,0,0,1));
+        background-clip: padding-box;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        /* border-bottom: .1em solid var(--clr-neonwhite); */
+        overflow: hidden;
+        box-shadow: 0 5px 10px rgba(255, 255, 255, 0.13)
+        
     }
 
     .aside-about {
