@@ -496,8 +496,9 @@ footer {
 #about h3 {
     /* -webkit-text-stroke: .1px var(--clr-neonwhite); */
     color: hsl(0, 0%, 100%);
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2rem, 2.5rem);
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 #ouicircle h2 {
