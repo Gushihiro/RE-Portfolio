@@ -238,6 +238,10 @@ footer {
     display:none;
 }
 
+.circle-mobile {
+    display:none;
+}
+
 .aside-projV {
     margin: 0 auto;
     background-color: transparent;
@@ -256,6 +260,23 @@ footer {
     /* border: 1px solid var(--clr-neonwhite); */
     display: flex;
     flex-direction: row-reverse;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.vmobile-inner {
+    /* border: 1px solid var(--clr-neonwhite); */
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 100%;
     height: 100%;
@@ -300,7 +321,33 @@ footer {
     transition: all 1s ease-out;
   }
 
-  .aside-projV-front {
+.vmobile-front, .vmobile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.cmobile-front, .cmobile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.aside-projV-front {
     background-color: black;
     color: black;
     -webkit-transition: all 1s ease-out;
@@ -311,7 +358,7 @@ footer {
     border-radius:10px;
   }
 
-  #vedomy {
+#vedomy {
     /* border: 1px solid var(--clr-neonwhite); */
     border-radius: 10px;
     box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
@@ -323,6 +370,25 @@ footer {
     -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
     transition: all 1s ease-out;
+}
+
+.vmobile-back {
+    /* border: 1px solid var(--clr-neonwhite); */
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
+    transform: rotateY(180deg);
+    box-shadow: 10px 10px 30px hsla(261, 64%, 68%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    transition: 1s;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
 }
 
 .aside-proj {
@@ -337,7 +403,7 @@ footer {
     -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
     transition: all 1s ease-out;
-  }
+}
 
 .aside-proj-inner {
     /* border: 1px solid var(--clr-neonwhite); */
@@ -351,11 +417,37 @@ footer {
     transform-style: preserve-3d;
 }
 
+.cmobile-inner {
+    /* border: 1px solid var(--clr-neonwhite); */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
 #ouicirclesss:hover ~ .aside-proj > .aside-proj-inner {
     transform: rotateY(180deg);
 }
 
 #ouicirclesss:focus ~ .aside-proj > .aside-proj-inner {
+    transform: rotateY(180deg);
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+#cmobile-front:focus .cmobile-inner {
     transform: rotateY(180deg);
     -webkit-transition: all 1s ease-out;
     -moz-transition: all 1s ease-out;
@@ -375,9 +467,22 @@ footer {
     -o-transition: all 1s ease-out;
     -ms-transition: all 1s ease-out;
     transition: all 1s ease-out;
-  }
+}
 
-  .aside-proj-front {
+.cmobile-front, .cmobile-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.aside-proj-front {
     background-color: black;
     color: black;
     -webkit-transition: all 1s ease-out;
@@ -386,9 +491,18 @@ footer {
     -ms-transition: all 1s ease-out;
     transition: all 1s ease-out;
     border-radius:10px;
-  }
+}
 
-  #ouicircle {
+#ouicircle {
+    /* border: 1px solid var(--clr-neonwhite); */
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
+    transform: rotateY(180deg);
+    box-shadow: -10px 10px 30px hsla(0, 100%, 72%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    transition: 1s;
+}
+
+.cmobile-back {
     /* border: 1px solid var(--clr-neonwhite); */
     border-radius: 10px;
     box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
@@ -434,6 +548,13 @@ footer {
     /* transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1) */
 }
 
+.vmobile-front:hover, .vmobile-front:hover > img {
+    opacity: 1;
+    box-shadow: -10px 10px 30px hsla(261, 64%, 68%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    transition: 1s;
+    /* transition-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1) */
+}
+
 #ouicirclesss {
     display:flex;
     flex-direction: column;
@@ -464,7 +585,24 @@ footer {
     transition: all 1s ease-out;
 }
 
+.cmobile-front img {
+    width: 80%;
+    height: 70%;
+    border-radius: 10%;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
 #ouicirclesss:hover, #ouicirclesss:hover > img {
+    opacity: 1;
+    box-shadow: 10px 10px 30px hsla(0, 100%, 72%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
+    transition: 1s;
+}
+
+.cmobile-front:hover, .cmobile-front:hover > img {
     opacity: 1;
     box-shadow: 10px 10px 30px hsla(0, 100%, 72%, 0.795), inset 0 0 20px rgba(255, 255, 255, 0.411);
     transition: 1s;
@@ -475,7 +613,17 @@ footer {
     transition: 1s;
 }
 
+.vedomy-mobile:hover {
+    box-shadow: 0px 0px 30px hsla(261, 64%, 68%, 0.795);
+    transition: 1s;
+}
+
 .aside-proj:hover {
+    box-shadow: -10px 10px 30px hsla(0, 100%, 72%, 0.795);
+    transition: 1s;
+}
+
+.circle-mobile:hover {
     box-shadow: -10px 10px 30px hsla(0, 100%, 72%, 0.795);
     transition: 1s;
 }
@@ -517,6 +665,18 @@ footer {
     font-family: 'Orbitron', sans-serif;
 }
 
+.vmobile-back h2 {
+    -webkit-text-stroke: .1px hsla(261, 64%, 68%, 0.795);
+    font-size: 4rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cmobile-back h2 {
+    -webkit-text-stroke: .1px hsla(0, 100%, 72%, 0.795);
+    font-size: 4rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
 .tech h3 {
     -webkit-text-stroke: 1px var(--clr-neonwhite);
     font-size: 1.25rem;
@@ -529,6 +689,12 @@ footer {
     font-family: 'Roboto', sans-serif;
 }
 
+.vmobile-back p {
+    color: var(--clr-neonwhite);
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-family: 'Roboto', sans-serif;
+}
+
 #about p {
     color: var(--clr-neonwhite);
     font-size: clamp(1rem, 1.5vw, 1.25rem);;
@@ -536,6 +702,13 @@ footer {
 }
 
 #ouicircle p {
+    padding: 10px;
+    color: var(--clr-neonwhite);
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    font-family: 'Roboto', sans-serif;
+}
+
+.cmobile-back p {
     padding: 10px;
     color: var(--clr-neonwhite);
     font-size: clamp(1rem, 1.5vw, 1.25rem);
@@ -731,18 +904,37 @@ select:-webkit-autofill:focus {
         transition: all 1s ease-out;
     }
 
-    .aside-projV-front {
+    .vmobile-front {
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         /* border: 1px solid var(--clr-neonwhite); */
-        border-radius: 10%;
+        border-radius: 10px;
         min-height:60vh;
         width: 100vw;
         margin: 0 auto;
         box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
-        opacity: .4;
+        opacity: 1;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+    }
+
+    .cmobile-front {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid var(--clr-neonwhite); */
+        border-radius: 10px;
+        min-height:60vh;
+        width: 100vw;
+        margin: 0 auto;
+        box-shadow: 0 0px 10px rgba(255, 255, 255, 0.247);
+        opacity: 1;
         -webkit-transition: all 1s ease-out;
         -moz-transition: all 1s ease-out;
         -o-transition: all 1s ease-out;
@@ -752,9 +944,48 @@ select:-webkit-autofill:focus {
 
     .vedomy-mobile {
         display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: transparent;
+        min-height:60vh;
+        width: 100vw;
+        border-radius: 10px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        transition: all 1s ease-out;
     }
 
-    .aside-projV-front img {
+    .circle-mobile {
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        background-color: transparent;
+        min-height:60vh;
+        width: 100vw;
+        border-radius: 10px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+    }
+
+    .vmobile-front img {
+        width: 80%;
+        height: 70%;
+        border-radius: 10%;
+        -webkit-transition: all 1s ease-out;
+       -moz-transition: all 1s ease-out;
+       -o-transition: all 1s ease-out;
+       -ms-transition: all 1s ease-out;
+       transition: all 1s ease-out;
+    }
+
+    .cmobile-front img {
         width: 80%;
         height: 70%;
         border-radius: 10%;
@@ -769,11 +1000,32 @@ select:-webkit-autofill:focus {
         display: none;
     }
 
+    .aside-proj {
+        display: none;
+    }
+
+    .vmobile-inner {
+        flex-direction: column;
+    }
+
     #vedomyss {
         display: none;
     }
 
-    .vedomy-mobile:focus .aside-projV-inner {
+    #ouicirclesss {
+        display: none;
+    }
+
+    .vedomy-mobile:focus .vmobile-inner {
+        transform: rotateY(180deg);
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+    }
+
+    .circle-mobile:focus .cmobile-inner {
         transform: rotateY(180deg);
         -webkit-transition: all 1s ease-out;
         -moz-transition: all 1s ease-out;
@@ -809,13 +1061,17 @@ select:-webkit-autofill:focus {
         width: 100vw;
     }
 
-    .aside-proj, #ouicirclesss {
+    .circle-mobile, .cmobile-front {
         height:10vh;
         width: 100%;
         margin: 0 auto;
         border-radius:5px;
     }
 
+
+    .mobilelink {
+        font-size:1.25rem;
+    }
 }
 
 @media screen and (max-width: 400px) {
