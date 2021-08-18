@@ -49,7 +49,7 @@ header {
 
 .parallax {
     /* The image used */
-    background-image: url("../images/MainLogo");
+    background-image: url("../images/MainLogo.png");
     background-color:black;
     /* Set a specific height */
     min-height: 100vh;
