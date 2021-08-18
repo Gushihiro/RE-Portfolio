@@ -639,7 +639,7 @@ footer {
 }
 
 #about h2 {
-    -webkit-text-stroke: .1px var(--clr-neonblue);
+    -webkit-text-stroke: .7px var(--clr-neonblue);
     font-size: 4rem;
     
     font-family: 'Orbitron', sans-serif;
