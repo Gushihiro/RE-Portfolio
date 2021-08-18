@@ -83,13 +83,13 @@ header {
 .hero h1 {
     color: transparent;
     font-size: clamp(3rem, 10vw, 10rem);
-    -webkit-text-stroke: .2px var(--clr-neonwhite);
+    -webkit-text-stroke: .7px var(--clr-neonwhite);
     font-family: 'Orbitron', sans-serif;
 }
 
 .hero h2 {
     /* color: var(--clr-neonwhite); */
-    -webkit-text-stroke: .2px var(--clr-neonwhite);
+    -webkit-text-stroke: .7px var(--clr-neonwhite);
     font-size: clamp(2rem, 5vw, 4rem);
     font-family: 'Orbitron', sans-serif;
     border-bottom: .05em solid var(--clr-neonwhite);
@@ -97,7 +97,7 @@ header {
 
 .hero h3 {
     /* color: var(--clr-neonwhite); */
-    -webkit-text-stroke: .2px var(--clr-neonwhite);
+    -webkit-text-stroke: .7px var(--clr-neonwhite);
     font-size: clamp(1rem, 4vw, 3rem);
     font-family: 'Orbitron', sans-serif;
 }
@@ -151,7 +151,7 @@ footer {
 }
 
 .spacer1 h2 {
-    -webkit-text-stroke: .1px var(--clr-neonblue);
+    -webkit-text-stroke: .4px var(--clr-neonblue);
     font-size: clamp(2rem, 5vw, 4rem);
     font-family: 'Orbitron', sans-serif;
 }
